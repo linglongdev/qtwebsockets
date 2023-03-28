@@ -1,0 +1,21 @@
+package:
+  id: qtwebsockets
+  kind: lib
+  version: 5.11.3
+
+base:
+  id: org.deepin.base
+  version: 20.5.0
+
+depends:
+- id: qtbase
+  version: 5.11.3.15
+
+source:
+  kind: git
+  url: https://github.com/deepin-community/qtwebsockets-opensource-src.git
+  version: uos/5.11.3
+  commit: d3ef9ff33044990fdb7164230d9df8ec8fa3cf90
+  patch: []
+build:
+  kind: qmake
